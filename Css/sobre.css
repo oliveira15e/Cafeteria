@@ -33,6 +33,7 @@ header{
     justify-content: center;
     gap: 3rem;
     list-style: none;
+
 }
 .nav-bar a{
     text-decoration: none;
@@ -82,4 +83,119 @@ header{
     font-family: var(--texto);
     font-size: 1.2rem;
     text-align: justify;
+}
+footer{
+    background-color: #1F1814;
+    color: var(--cream);
+
+    padding: 3rem 10% 1rem;
+
+    border-top: 1px solid var(--cor-secundaria);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    margin-bottom: 2rem;
+}
+.footer-info h3{
+    font-family: var(--titulo);
+    color: var(--cor-secundaria);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.footer-info p{
+    margin-bottom: .7rem;
+    line-height: 1.6;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.footer-bottom p{
+    font-size: .9rem;
+    color: rgba(255,255,255,.7);
+}
+
+@media (max-width: 768px){
+
+    .nav-bar ul{
+        gap: 1.5rem;
+    }
+
+    .nav-bar a{
+        font-size: 1.5rem;
+    }
+
+    .about{
+        padding: 2rem 1.5rem;
+    }
+
+    .about h1{
+        font-size: 2.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .about p{
+        max-width: 100%;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    header{
+        padding: 1rem;
+    }
+
+    .nav-bar ul{
+        gap: .8rem;
+    }
+
+    .nav-bar a{
+        font-size: 1.5rem;
+    }
+
+    .about{
+        padding: 1rem;
+    }
+
+    .about h1{
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        padding-bottom: 1rem;
+    }
+
+    .about p{
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: justify;
+
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info h3{
+        font-size: 1.3rem;
+    }
+
+    .footer-info p,
+    .footer-bottom p{
+        font-size: .9rem;
+    }
+
 }

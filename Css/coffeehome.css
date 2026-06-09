@@ -142,3 +142,149 @@ main{
     color: var(--cor-texto);
     padding-bottom: 2.5rem;
 }
+footer{
+    background-color: #1F1814;
+    color: var(--cream);
+
+    padding: 3rem 10% 1rem;
+
+    border-top: 1px solid var(--cor-secundaria);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    margin-bottom: 2rem;
+}
+.footer-info h3{
+    font-family: var(--titulo);
+    color: var(--cor-secundaria);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.footer-info p{
+    margin-bottom: .7rem;
+    line-height: 1.6;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.footer-bottom p{
+    font-size: .9rem;
+    color: rgba(255,255,255,.7);
+}
+
+@media (max-width: 768px){
+
+    .nav-bar ul{
+        gap: 1.5rem;
+    }
+
+    .nav-bar a{
+        font-size: 1.5rem;
+    }
+
+    .home h1{
+        font-size: 2.5rem;
+    }
+
+    .home p{
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    .about{
+        padding: 2rem;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size: 1.8rem;
+    }
+
+    .about p{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    header{
+        padding: 1rem;
+    }
+
+    .nav-bar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-bar a{
+        font-size: 1.2rem;
+    }
+
+    .home{
+        padding: 0 1rem;
+    }
+
+    .home h1{
+        font-size: 2rem;
+    }
+
+    .home p{
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+
+    .home button{
+        padding: 12px 20px;
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+
+    button svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .about{
+        padding: 1.5rem;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+    }
+
+    .about p{
+        font-size: .95rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info h3{
+        font-size: 1.3rem;
+    }
+
+    .footer-info p,
+    .footer-bottom p{
+        font-size: .9rem;
+    }
+}

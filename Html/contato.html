@@ -12,14 +12,67 @@
             <ul>
                 <li><a href="/Html/coffeehome.html">Home</a></li>
                 <li><a href="/Html/sobre.html">Sobre</a></li>
-                <li><a href="/Html/contato.html">Contato</a></li>
+                <li><a href="/Html/contato.html">Reserva</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="contact">
-            
+            <h1>Faça sua Reserva!</h1>
+            <form class="reservation-form">
+                <div class="field">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" placeholder="Nome Completo">
+                </div>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="email@gmail.com">
+                </div>
+                <div class="field">
+                    <label for="phone">Telefone</label>
+                    <input type="phone" id="phone" placeholder="(12)3456-7890">
+                </div>
+                <div class="field">
+                    <label for="date">Data da Reserva</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="field">
+                    <label for="time">Horário da Reserva</label>
+                    <input type="time" id="time">
+                </div>
+                <div class="field">
+                    <label for="people">Quantidade de Pessoas</label>
+                    <select name="people" id="people">
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="3">3 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="5">5 Pessoas</option>
+                        <option value="6">6+ Pessoas</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-reservation">Fazer Reserva</button>
+            </form>
         </section>
     </main>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-info">
+            <h3>Coffee</h3>
+            <p><strong>Horário:</strong> 15:00 às 23:00</p>
+            <p><strong>E-mail:</strong> email@gmail.com</p>
+            <p><strong>Telefone:</strong> (12) 3456-7890</p>
+        </div>
+        <div class="footer-info">
+            <h3>Informações</h3>
+            <p>Reservas mediante agendamento.</p>
+            <p>Recomendamos reservar com antecedência.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Coffee. Todos os direitos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>
