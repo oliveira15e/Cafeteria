@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Fredericka+the+Great&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+HU:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-principal:#6f4e37;
+    --cor-secundaria: #d4a373;
+    --cor-texto: #ffffff;
+
+    --titulo: "Fredericka the Great", serif;
+    --texto: "Poppins", sans-serif;
+    --frases: "Pacifico", cursive;
+
+    --coffee-dark: #2B1D16;
+    --coffee-medium: #5C4033;
+    --coffee-light: #D4A373;
+    --cream: #FAEDCD;
+    --white: #F8F9FA;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 5%;
+    z-index: 100;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 2rem;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: var(--titulo);
+}
+.nav-bar a:hover{
+    color: var(--cor-secundaria);
+}
