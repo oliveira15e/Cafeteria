@@ -1,0 +1,74 @@
+☕ Coffee Shop - Site de Cafeteria
+
+Este é um projeto de site para uma cafeteria fictícia, desenvolvido com HTML, CSS e JavaScript. O objetivo é praticar criação de interfaces modernas, responsivas e interativas.
+
+📸 Layout do Projeto:
+
+- Página inicial com imagem de destaque
+- Seção "Sobre nós"
+- Cardápio dividido em categorias:
+  - Cafés
+  - Doces
+  - Salgados
+- Formulário de reserva
+- Footer com informações da cafeteria
+
+<video controls src="Img/Cafeteria.mp4" title="Title"></video>
+
+🚀 Tecnologias utilizadas:
+
+- HTML5
+- CSS3 (Flexbox, Grid, variáveis CSS, responsividade)
+- JavaScript (validação de formulário)
+
+📋 Funcionalidades:
+
+🎯 Interface
+- Design moderno estilo cafeteria
+- Imagens de fundo com overlay escuro
+- Efeito glassmorphism em cards
+- Navegação simples e intuitiva
+
+📱 Responsividade
+- Adaptado para desktop, tablet e mobile
+- Ajuste automático de layout com media queries
+
+🧾 Cardápio
+- Organização por categorias
+- Cards com imagem, descrição e preço
+
+📅 Sistema de reservas
+- Validação de formulário com JavaScript:
+  - Campos obrigatórios
+  - Bloqueio de datas passadas
+  - Horário permitido (15h às 23h)
+  - Mensagem de sucesso ao enviar
+
+🧠 Aprendizados
+
+Durante o desenvolvimento foram praticados:
+
+- Estruturação de páginas completas
+- Uso de variáveis CSS (`:root`)
+- Position, overlay e z-index
+- Responsividade com media queries
+- Manipulação de DOM com JavaScript
+- Validação de formulários
+
+✨ Melhorias futuras
+
+- Sistema de login
+- Integração com banco de dados
+- Página de admin para reservas
+- Filtro de cardápio com JavaScript
+- Modo escuro/claro
+- Animações ao scroll
+
+👩‍💻 Autor
+
+Desenvolvido por **Emilly Oliveira**  
+Projeto para prática de desenvolvimento front-end.
+
+📌 Observação
+
+Este projeto é apenas educacional e não possui backend real.
