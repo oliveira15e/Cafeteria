@@ -45,96 +45,86 @@ header{
 .nav-bar a:hover{
     color: var(--cor-secundaria);
 }
-.contact{
+.menu{
     min-height: 100vh;
-    background-image: url(/Img/584629-3175x2116-desktop-hd-cafe-background-image.jpg);
+    position: relative;
+    background-image: url(/Img/cafe-background-ajqkgupdfnl4ifh5.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    padding: 8rem 5%;
     color: var(--cor-texto);
 }
-.contact::before{
+.menu::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
-.contact h1,
-.reservation-form{
+.menu h1,
+.menu-category{
     position: relative;
     z-index: 2;
 }
-.contact h1{
+.menu h1{
+    text-align: center;
     font-family: var(--titulo);
+    font-size: 3rem;
     font-weight: lighter;
-    padding-bottom: 1rem;
-    cursor: default;
-    margin-top: 8rem;
+    margin-bottom: 4rem;
 }
-.reservation-form{
-    width: 100%;
-    max-width: 550px;
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.menu-category{
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+.menu-category h2{
+    font-family: var(--titulo);
+    font-size: 5rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    color: var(--cor-texto);
+    margin-top: 35%;
+}
+.menu-card{
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.3);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.field{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    text-align: left;
-}
-.field label{
-    font-size: .95rem;
-}
-.field input,
-.field select{
-    padding: 12px 15px;
-    border: 1px solid rgba(255,255,255,.2);
-    border-radius: 8px;
-    background: rgba(255,255,255,.08);
-    color: var(--cor-texto);
-    outline: none;
-}
-option{
-    color: var(--coffee-dark);
-}
-.field input::placeholder{
-    color: rgba(255,255,255,.6);
-}
-.btn-reservation{
-    margin-top: .5rem;
-    padding: 14px;
-    border: 1px solid var(--cor-secundaria);
-    border-radius: 8px;
-    background: transparent;
-    color: var(--cor-texto);
-    font-family: var(--texto);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
+    overflow: hidden;
     transition: .3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
 }
-.btn-reservation:hover{
-    background: #d4a373;
-    color: var(--coffee-medium);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 163, 115, 0.3);
+.menu-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.4);
+}
+.menu-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.menu-card h3{
+    font-family: var(--titulo);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 1rem 1rem .5rem;
+}
+.menu-card p{
+    padding: 0 1rem;
+    font-family: var(--texto);
+    line-height: 1.6;
+}
+.menu-card span{
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
 }
 footer{
     background-color: #1F1814;
@@ -176,21 +166,42 @@ footer{
 
     .nav-bar ul{
         gap: 1.5rem;
+        flex-wrap: wrap;
     }
 
     .nav-bar a{
         font-size: 1.5rem;
     }
 
-    .contact h1{
-        font-size: 1.5rem;
-        text-align: center;
-        margin-top: 6rem;
+    .menu h1{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
     }
 
-    .reservation-form{
-        width: 90%;
-        padding: 2rem;
+    .menu-category{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .menu-category h2{
+        font-size: 3rem;
+        margin-top: 0;
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .menu-card img{
+        height: 180px;
+    }
+    
+    .menu-card,
+    .menu-card:hover,
+    button,
+    button:hover,
+    .nav-bar a,
+    .nav-bar a:hover{
+        transition: none;
+        transform: none;
     }
 
     .footer-content{
@@ -207,40 +218,62 @@ footer{
     }
 
     .nav-bar ul{
-        gap: .8rem;
+        gap: 1rem;
     }
 
     .nav-bar a{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
-    .contact h1{
-        font-size: 1.5rem;
+    .menu h1{
+        font-size: 2rem;
     }
 
-    .reservation-form{
+    .menu-category{
+        grid-template-columns: 1fr;
+    }
+
+    .menu-category h2{
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .menu-card{
         width: 100%;
-        padding: 1.5rem;
     }
 
-    .field input,
-    .field select,
-    .btn-reservation{
-        width: 100%;
-        font-size: 1rem;
+    .menu-card,
+    .menu-card:hover,
+    button,
+    button:hover,
+    .nav-bar a,
+    .nav-bar a:hover{
+        transition: none;
+        transform: none;
     }
 
-    .footer-content{
-        flex-direction: column;
-        text-align: center;
+    .menu-card img{
+        height: 200px;
+    }
+
+    .menu-card h3{
+        font-size: 1.3rem;
+    }
+
+    .menu-card p{
+        font-size: .95rem;
+    }
+
+    footer{
+        padding: 2rem 1rem;
     }
 
     .footer-info h3{
         font-size: 1.3rem;
     }
 
-    .footer-info p,
-    .footer-bottom p{
+    .footer-info p{
         font-size: .9rem;
     }
 }

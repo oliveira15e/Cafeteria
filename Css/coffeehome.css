@@ -51,6 +51,7 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +100,9 @@ header{
     font-size: 1rem;
     margin-top: 1rem;
     font-family: var(--titulo);
+}
+.btn-link{
+    text-decoration: none;
 }
 button svg{
     width: 24px;
