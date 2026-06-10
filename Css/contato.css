@@ -67,7 +67,7 @@ header{
     z-index: 1;
 }
 .contact h1,
-.reservation-form{
+#reservation-form{
     position: relative;
     z-index: 2;
 }
@@ -78,7 +78,7 @@ header{
     cursor: default;
     margin-top: 8rem;
 }
-.reservation-form{
+#reservation-form{
     width: 100%;
     max-width: 550px;
     padding: 2.5rem;

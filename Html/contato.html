@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Css/contato.css">
+    <script src="/Js/contato.js" defer></script>
     <title>Contato</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
     <main>
         <section class="contact">
             <h1>Faça sua Reserva!</h1>
-            <form class="reservation-form">
+            <form id="reservation-form">
                 <div class="field">
                     <label for="name">Nome Completo</label>
                     <input type="text" id="name" placeholder="Nome Completo">
@@ -30,7 +31,7 @@
                 </div>
                 <div class="field">
                     <label for="phone">Telefone</label>
-                    <input type="phone" id="phone" placeholder="(12)3456-7890">
+                    <input type="phone" id="phone" placeholder="(12)3456-7890" maxlength="11" inputmode="tel">
                 </div>
                 <div class="field">
                     <label for="date">Data da Reserva</label>
@@ -38,7 +39,7 @@
                 </div>
                 <div class="field">
                     <label for="time">Horário da Reserva</label>
-                    <input type="time" id="time">
+                    <input type="time" id="time" min="15:00" max="23:00">
                 </div>
                 <div class="field">
                     <label for="people">Quantidade de Pessoas</label>
